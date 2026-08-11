@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Poster SOAC 2026 v4 – PRISMA + RoB + Logos</title>
+<style>
+/* ================================================================
+   SOAC 2026 · v4 PREMIUM · 1080 × 1960 px · PDF-ready
+   Palette: #1B2A4A (navy), #C8A84B (gold), #FFFFFF, #F4F6FB, #E8EFF9
+   ================================================================ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  width: 1080px; height: 1960px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #FFFFFF; color: #1B2A4A;
+}
+.poster {
+  width: 1080px; height: 1960px;
+  display: flex; flex-direction: column;
+  background: #FFFFFF;
+}
+
+/* ─── HEADER ─── */
+.header {
+  background: linear-gradient(135deg, #0f1e36 0%, #1B2A4A 60%, #243658 100%);
+  padding: 16px 36px 14px;
+  border-bottom: 5px solid #C8A84B;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.header-text { flex: 1; text-align: center; }
+.header-conf {
+  font-size: 18px; font-weight: 900;
+  color: #FFFFFF; letter-spacing: 2px; text-transform: uppercase;
+}
+.header-sub {
+  font-size: 11px; color: #C8A84B;
+  letter-spacing: 2px; text-transform: uppercase;
+  margin-top: 3px; font-weight: 700;
+}
+.header-logos-right {
+  display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+}
+
+/* ─── TITLE BLOCK ─── */
+.title-block {
+  padding: 14px 44px 10px;
+  text-align: center; flex-shrink: 0;
+  background: linear-gradient(180deg, #f0f4fc 0%, #FFFFFF 100%);
+  border-bottom: 2px solid #d0d8e8;
+}
+.poster-title {
+  font-size: 18px; font-weight: 900;
+  color: #1B2A4A; line-height: 1.32;
+  text-transform: uppercase; letter-spacing: 0.3px;
+}
+.authors { margin-top: 7px; font-size: 12.5px; color: #1B2A4A; line-height: 1.5; }
+.presenter { font-style: italic; text-decoration: underline; font-weight: 700; }
+.affiliation { font-size: 11px; color: #5a6a84; margin-top: 3px; }
+
+/* ─── CONTENT ─── */
+.content {
+  flex: 1; padding: 8px 30px 5px;
+  display: flex; flex-direction: column; gap: 6px;
+  overflow: hidden;
+}
+
+/* ─── SECTION ─── */
+.section-header {
+  background: linear-gradient(90deg, #1B2A4A 0%, #243658 100%);
+  color: #FFFFFF; font-size: 11px; font-weight: 900;
+  text-transform: uppercase; letter-spacing: 1.8px;
+  padding: 5px 14px; border-left: 5px solid #C8A84B;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-header .icon { color: #C8A84B; font-size: 12px; }
+.section-body {
+  background: #F4F6FB; padding: 8px 14px;
+  font-size: 11px; line-height: 1.6; color: #1B2A4A;
+  border-left: 5px solid #C8A84B; border-bottom: 1px solid #dce3ef;
+}
+.section-body ul { padding-left: 15px; margin-top: 4px; }
+.section-body li { margin-bottom: 2px; }
+.section-body strong { color: #1B2A4A; }
+
+/* ─── PRISMA FLOW ─── */
+.prisma-wrap {
+  background: #F4F6FB; border-left: 5px solid #C8A84B;
+  border-bottom: 1px solid #dce3ef;
+  padding: 6px 10px 8px;
+  display: flex; flex-direction: column; gap: 0;
+}
+.prisma-title {
+  font-size: 10px; font-weight: 900; color: #1B2A4A;
+  text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 4px; text-align: center;
+}
+
+/* ─── ROB ─── */
+.rob-wrap {
+  background: #F4F6FB; border-left: 5px solid #C8A84B;
+  border-bottom: 1px solid #dce3ef; padding: 6px 10px 8px;
+}
+.rob-title {
+  font-size: 10px; font-weight: 900; color: #1B2A4A;
+  text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 4px; text-align: center;
+}
+
+/* ─── TABLE ─── */
+.tbl-wrap {
+  background: #F4F6FB; border-left: 5px solid #C8A84B;
+  border-bottom: 1px solid #dce3ef; padding: 6px 12px 8px;
+}
+table { width: 100%; border-collapse: collapse; font-size: 10px; margin-top: 3px; }
+thead tr { background: #1B2A4A; color: #FFFFFF; }
+thead th { padding: 5px 7px; text-align: left; font-weight: 700; letter-spacing: 0.3px; }
+tbody tr:nth-child(even) { background: #e6ecf5; }
+tbody tr:nth-child(odd)  { background: #F4F6FB; }
+tbody td { padding: 4px 7px; color: #1B2A4A; vertical-align: top; border-bottom: 1px solid #d0d8e8; }
+.sig  { color: #c0392b; font-weight: bold; }
+
+/* ─── GRADE PILLS ─── */
+.grade-row { display: flex; gap: 5px; margin-top: 5px; }
+.gpill {
+  background: #1B2A4A; color: #FFFFFF;
+  border-radius: 5px; padding: 3px 7px;
+  font-size: 9.5px; flex: 1; text-align: center;
+  line-height: 1.4; border: 1.5px solid #C8A84B;
+}
+.gpill strong { color: #C8A84B; display: block; font-size: 10px; }
+
+/* ─── CONCLUSIONS ─── */
+.conc-body {
+  background: linear-gradient(135deg, #1B2A4A 0%, #243658 100%);
+  padding: 9px 14px; font-size: 11px;
+  line-height: 1.62; color: #FFFFFF;
+  border-left: 5px solid #C8A84B; border-bottom: 1px solid #dce3ef;
+}
+.conc-body ul { padding-left: 15px; margin-top: 3px; }
+.conc-body li { margin-bottom: 2px; }
+.conc-body strong { color: #C8A84B; }
+
+/* ─── REFS ─── */
+.refs-header {
+  background: #C8A84B; color: #1B2A4A;
+  font-size: 10.5px; font-weight: 900; text-transform: uppercase;
+  letter-spacing: 1.5px; padding: 4px 14px;
+  border-left: 5px solid #1B2A4A;
+}
+.refs-body {
+  background: #F4F6FB; padding: 6px 14px;
+  border-left: 5px solid #1B2A4A;
+}
+.refs-body ol {
+  padding-left: 15px; font-size: 9.5px;
+  line-height: 1.5; color: #3a4a64; column-count: 2; column-gap: 20px;
+}
+.refs-body li { margin-bottom: 1px; break-inside: avoid; }
+
+/* ─── FOOTER ─── */
+.footer {
+  background: linear-gradient(90deg, #0f1e36 0%, #1B2A4A 50%, #0f1e36 100%);
+  border-top: 4px solid #C8A84B;
+  padding: 8px 30px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-shrink: 0;
+}
+.footer-left { font-size: 9.5px; color: #8fa4c8; }
+.footer-right { font-size: 9.5px; color: #8fa4c8; text-align: right; }
+.footer-center { font-size: 10px; color: #C8A84B; font-weight: bold; letter-spacing: 0.5px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <div class="header">
+    <!-- UGM Logo (left) -->
+    <div class="header-logos">
+      <svg width="52" height="52" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- UGM simplified crest -->
+        <circle cx="50" cy="50" r="48" fill="none" stroke="#C8A84B" stroke-width="3"/>
+        <circle cx="50" cy="50" r="40" fill="#1B2A4A"/>
+        <!-- Torch flame -->
+        <ellipse cx="50" cy="28" rx="8" ry="12" fill="#C8A84B"/>
+        <polygon points="50,16 44,26 56,26" fill="#e8c060"/>
+        <!-- Torch body -->
+        <rect x="47" y="36" width="6" height="20" rx="2" fill="#C8A84B"/>
+        <!-- Stars / decorative elements -->
+        <text x="50" y="72" text-anchor="middle" font-size="8" fill="#C8A84B" font-weight="bold" font-family="Arial">UGM</text>
+        <text x="50" y="82" text-anchor="middle" font-size="5.5" fill="#8fa4c8" font-family="Arial">GADJAH MADA</text>
+        <!-- horizontal bar -->
+        <line x1="30" y1="62" x2="70" y2="62" stroke="#C8A84B" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div class="header-text">
+      <div class="header-conf">8th SOAC Yogyakarta 2026</div>
+      <div class="header-sub">Original Research: Systematic Review &nbsp;·&nbsp; E-Poster Presentation</div>
+    </div>
+    <!-- SOAC + Perdatin logos (right) -->
+    <div class="header-logos-right">
+      <!-- SOAC badge -->
+      <svg width="52" height="52" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="96" height="96" rx="10" ry="10" fill="#C8A84B"/>
+        <rect x="6" y="6" width="88" height="88" rx="7" ry="7" fill="#1B2A4A"/>
+        <text x="50" y="38" text-anchor="middle" font-size="22" fill="#C8A84B" font-weight="900" font-family="Arial">SOAC</text>
+        <line x1="18" y1="44" x2="82" y2="44" stroke="#C8A84B" stroke-width="2"/>
+        <text x="50" y="57" text-anchor="middle" font-size="9" fill="#FFFFFF" font-family="Arial">SYMPOSIUM ON</text>
+        <text x="50" y="68" text-anchor="middle" font-size="9" fill="#FFFFFF" font-family="Arial">ANESTHESIA &amp;</text>
+        <text x="50" y="79" text-anchor="middle" font-size="9" fill="#FFFFFF" font-family="Arial">CRITICAL CARE</text>
+        <text x="50" y="91" text-anchor="middle" font-size="8" fill="#C8A84B" font-family="Arial">2026</text>
+      </svg>
+      <!-- Perdatin badge -->
+      <svg width="52" height="52" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" fill="#1B2A4A" stroke="#C8A84B" stroke-width="3"/>
+        <text x="50" y="34" text-anchor="middle" font-size="8.5" fill="#C8A84B" font-weight="bold" font-family="Arial">PERDATIN</text>
+        <line x1="20" y1="38" x2="80" y2="38" stroke="#C8A84B" stroke-width="1.5"/>
+        <!-- Caduceus symbol simplified -->
+        <line x1="50" y1="42" x2="50" y2="76" stroke="#FFFFFF" stroke-width="2.5"/>
+        <path d="M50,44 C60,46 60,52 50,54 C40,56 40,62 50,64" fill="none" stroke="#C8A84B" stroke-width="1.8"/>
+        <path d="M50,44 C40,46 40,52 50,54 C60,56 60,62 50,64" fill="none" stroke="#C8A84B" stroke-width="1.8"/>
+        <polygon points="50,40 46,46 54,46" fill="#C8A84B"/>
+        <text x="50" y="86" text-anchor="middle" font-size="6.5" fill="#8fa4c8" font-family="Arial">PERHIMPUNAN</text>
+        <text x="50" y="94" text-anchor="middle" font-size="6.5" fill="#8fa4c8" font-family="Arial">DOKTER ANESTESI</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ═══════════ TITLE ═══════════ -->
+  <div class="title-block">
+    <div class="poster-title">
+      Efficacy and Safety of Push-Dose Norepinephrine for<br>
+      Intraoperative Hypotension Management in Non-Obstetric Surgery:<br>
+      A Systematic Review
+    </div>
+    <div class="authors">
+      <span class="presenter">R Suseno Aji</span>, Calcarina Fitriani Retno Wisudarti, Djayanti Sari
+    </div>
+    <div class="affiliation">
+      Department of Anesthesiology &amp; Intensive Therapy · Faculty of Medicine, Public Health and Nursing<br>
+      Universitas Gadjah Mada / RSUP Dr. Sardjito, Yogyakarta, Indonesia
+    </div>
+  </div>
+
+  <!-- ═══════════ CONTENT ═══════════ -->
+  <div class="content">
+
+    <!-- BACKGROUND + OBJECTIVE (side by side) -->
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:6px;">
+      <div>
+        <div class="section-header"><span class="icon">◆</span> Background</div>
+        <div class="section-body">
+          <p>Intraoperative hypotension (IOH), defined as MAP &lt;65 mmHg, occurs in up to
+          <strong>30%</strong> of non-cardiac surgeries and is independently associated with
+          myocardial injury, acute kidney injury, and increased 30-day mortality. Push-dose
+          (bolus) norepinephrine (NE) has emerged as a practical vasopressor; however,
+          high-quality evidence on its efficacy and safety remains limited.</p>
+        </div>
+      </div>
+      <div>
+        <div class="section-header"><span class="icon">◆</span> Objective</div>
+        <div class="section-body" style="height:calc(100% - 27px);">
+          <p>To systematically evaluate the <strong>efficacy and safety</strong> of
+          push-dose NE for IOH in non-obstetric surgery compared to other vasopressors,
+          following <strong>PRISMA 2020</strong> guidelines.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- METHODS (text + PRISMA side by side) -->
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:6px;">
+      <div>
+        <div class="section-header"><span class="icon">◆</span> Methods</div>
+        <div class="section-body" style="font-size:10.5px;">
+          <p><strong>Design:</strong> Systematic review · PRISMA 2020</p>
+          <p style="margin-top:3px;"><strong>Databases:</strong> PubMed, Scopus, ProQuest</p>
+          <p style="margin-top:3px;"><strong>PICO:</strong> Adults ≥18 yr · Non-obstetric surgery · RCT design</p>
+          <p style="margin-top:3px;"><strong>Quality:</strong> Cochrane RoB 2 tool</p>
+          <p style="margin-top:3px;"><strong>Certainty:</strong> GRADE framework</p>
+          <p style="margin-top:3px;"><strong>Search string:</strong> "Norepinephrine" AND ("push dose" OR "bolus") AND ("intraoperative hypotension" OR "surgery")</p>
+        </div>
+      </div>
+      <!-- PRISMA FLOW DIAGRAM -->
+      <div>
+        <div class="prisma-wrap">
+          <div class="prisma-title">📊 PRISMA 2020 Flow Diagram</div>
+          <svg width="100%" height="290" viewBox="0 0 420 290" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif">
+            <defs>
+              <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L8,3 z" fill="#1B2A4A"/>
+              </marker>
+              <marker id="arrRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L8,3 z" fill="#c0392b"/>
+              </marker>
+            </defs>
+
+            <!-- IDENTIFICATION -->
+            <rect x="120" y="4" width="180" height="34" rx="5" fill="#1B2A4A"/>
+            <text x="210" y="17" text-anchor="middle" font-size="8" fill="#C8A84B" font-weight="bold">IDENTIFICATION</text>
+            <text x="210" y="29" text-anchor="middle" font-size="9" fill="#FFFFFF">Records identified: n = 643</text>
+            <text x="210" y="40" text-anchor="middle" font-size="8" fill="#8fa4c8">(PubMed 289 · Scopus 221 · ProQuest 133)</text>
+
+            <!-- Duplicates removed (right box) -->
+            <rect x="330" y="14" width="84" height="28" rx="4" fill="#fff0f0" stroke="#c0392b" stroke-width="1.5"/>
+            <text x="372" y="24" text-anchor="middle" font-size="7.5" fill="#c0392b" font-weight="bold">Duplicates</text>
+            <text x="372" y="35" text-anchor="middle" font-size="8" fill="#c0392b">removed: 280</text>
+            <line x1="300" y1="24" x2="330" y2="24" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrRed)"/>
+
+            <!-- Arrow down 1 -->
+            <line x1="210" y1="46" x2="210" y2="62" stroke="#1B2A4A" stroke-width="1.8" marker-end="url(#arr)"/>
+
+            <!-- SCREENING 1 -->
+            <rect x="120" y="63" width="180" height="28" rx="5" fill="#243658"/>
+            <text x="210" y="75" text-anchor="middle" font-size="8" fill="#C8A84B" font-weight="bold">SCREENING (Title/Abstract)</text>
+            <text x="210" y="87" text-anchor="middle" font-size="9" fill="#FFFFFF">Records screened: n = 363</text>
+
+            <!-- Excluded title/abs (right) -->
+            <rect x="330" y="67" width="84" height="28" rx="4" fill="#fff0f0" stroke="#c0392b" stroke-width="1.5"/>
+            <text x="372" y="77" text-anchor="middle" font-size="7.5" fill="#c0392b" font-weight="bold">Excluded</text>
+            <text x="372" y="88" text-anchor="middle" font-size="8" fill="#c0392b">T/A: 358</text>
+            <line x1="300" y1="77" x2="330" y2="77" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrRed)"/>
+
+            <!-- Arrow down 2 -->
+            <line x1="210" y1="91" x2="210" y2="108" stroke="#1B2A4A" stroke-width="1.8" marker-end="url(#arr)"/>
+
+            <!-- ELIGIBILITY -->
+            <rect x="120" y="109" width="180" height="28" rx="5" fill="#243658"/>
+            <text x="210" y="121" text-anchor="middle" font-size="8" fill="#C8A84B" font-weight="bold">ELIGIBILITY (Full-text)</text>
+            <text x="210" y="133" text-anchor="middle" font-size="9" fill="#FFFFFF">Full-texts assessed: n = 5</text>
+
+            <!-- Excluded full-text (right) -->
+            <rect x="330" y="109" width="84" height="36" rx="4" fill="#fff0f0" stroke="#c0392b" stroke-width="1.5"/>
+            <text x="372" y="119" text-anchor="middle" font-size="7.5" fill="#c0392b" font-weight="bold">Excluded: 2</text>
+            <text x="372" y="129" text-anchor="middle" font-size="7" fill="#c0392b">Review (not RCT)</text>
+            <text x="372" y="139" text-anchor="middle" font-size="7" fill="#c0392b">n=1 obstetric</text>
+            <line x1="300" y1="120" x2="330" y2="120" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrRed)"/>
+
+            <!-- Arrow down 3 -->
+            <line x1="210" y1="137" x2="210" y2="154" stroke="#1B2A4A" stroke-width="1.8" marker-end="url(#arr)"/>
+
+            <!-- INCLUDED -->
+            <rect x="100" y="155" width="220" height="40" rx="6" fill="#C8A84B"/>
+            <text x="210" y="170" text-anchor="middle" font-size="9" fill="#1B2A4A" font-weight="bold">✓ INCLUDED in Synthesis</text>
+            <text x="210" y="184" text-anchor="middle" font-size="10" fill="#1B2A4A" font-weight="900">3 RCTs · n = 388 participants</text>
+
+            <!-- Study list -->
+            <rect x="60" y="205" width="140" height="22" rx="4" fill="#F4F6FB" stroke="#1B2A4A" stroke-width="1"/>
+            <text x="130" y="220" text-anchor="middle" font-size="8" fill="#1B2A4A">Hassani 2018 · n = 56</text>
+
+            <rect x="210" y="205" width="150" height="22" rx="4" fill="#F4F6FB" stroke="#1B2A4A" stroke-width="1"/>
+            <text x="285" y="220" text-anchor="middle" font-size="8" fill="#1B2A4A">Thomsen 2026 · n = 261</text>
+
+            <rect x="135" y="235" width="150" height="22" rx="4" fill="#F4F6FB" stroke="#1B2A4A" stroke-width="1"/>
+            <text x="210" y="250" text-anchor="middle" font-size="8" fill="#1B2A4A">Vokuhl 2025 · n = 71</text>
+
+            <!-- Branch lines from INCLUDED -->
+            <line x1="140" y1="195" x2="130" y2="205" stroke="#1B2A4A" stroke-width="1.2"/>
+            <line x1="210" y1="195" x2="285" y2="205" stroke="#1B2A4A" stroke-width="1.2"/>
+            <line x1="210" y1="195" x2="210" y2="235" stroke="#1B2A4A" stroke-width="1.2"/>
+
+            <!-- Legend -->
+            <rect x="5" y="262" width="10" height="10" rx="2" fill="#1B2A4A"/>
+            <text x="18" y="271" font-size="7.5" fill="#1B2A4A">Included</text>
+            <rect x="75" y="262" width="10" height="10" rx="2" fill="#fff0f0" stroke="#c0392b" stroke-width="1.5"/>
+            <text x="88" y="271" font-size="7.5" fill="#c0392b">Excluded</text>
+            <rect x="155" y="262" width="10" height="10" rx="2" fill="#C8A84B"/>
+            <text x="168" y="271" font-size="7.5" fill="#1B2A4A">Final Synthesis</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTS header + RoB -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+      <div>
+        <div class="section-header"><span class="icon">◆</span> Results – Summary</div>
+        <div class="section-body" style="font-size:10.5px;">
+          <p><strong>3 RCTs · n = 388</strong> · Push-dose NE <strong>10 mcg/bolus</strong> (10 mcg/mL, peripheral IV)</p>
+          <ul style="margin-top:4px;">
+            <li><strong>vs. Ephedrine:</strong> NE superior MAP (98.9 vs 91.5 mmHg; <span class="sig">p&lt;0.001</span>), fewer hypotension episodes (<span class="sig">p=0.005</span>)</li>
+            <li><strong>vs. Continuous NE (low–mod risk):</strong> Comparable AUC MAP &lt;65 (p=0.070), 66% less drug dose (<span class="sig">p&lt;0.001</span>)</li>
+            <li><strong>vs. Continuous NE (high risk):</strong> Infusion better ARV-MAP stability (<span class="sig">p&lt;0.001</span>, d=1.00)</li>
+            <li><strong>Safety:</strong> No significant HTN overshoot or arrhythmia; peripheral IV safe — zero extravasation</li>
+          </ul>
+          <div class="grade-row" style="margin-top:5px;">
+            <div class="gpill"><strong>⊕⊕○○</strong>MAP reversal · Low</div>
+            <div class="gpill"><strong>⊕⊕○○</strong>HTN overshoot · Low</div>
+            <div class="gpill"><strong>⊕○○○</strong>Time to target · Very Low</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RoB TRAFFIC LIGHT CHART -->
+      <div>
+        <div class="rob-wrap">
+          <div class="rob-title">🚦 Risk of Bias 2 (Cochrane) – Traffic Light</div>
+          <svg width="100%" height="175" viewBox="0 0 360 175" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif">
+            <!-- Column headers -->
+            <text x="110" y="12" text-anchor="middle" font-size="7" fill="#1B2A4A" font-weight="bold">D1</text>
+            <text x="147" y="12" text-anchor="middle" font-size="7" fill="#1B2A4A" font-weight="bold">D2</text>
+            <text x="184" y="12" text-anchor="middle" font-size="7" fill="#1B2A4A" font-weight="bold">D3</text>
+            <text x="221" y="12" text-anchor="middle" font-size="7" fill="#1B2A4A" font-weight="bold">D4</text>
+            <text x="258" y="12" text-anchor="middle" font-size="7" fill="#1B2A4A" font-weight="bold">D5</text>
+            <text x="295" y="12" text-anchor="middle" font-size="7" fill="#1B2A4A" font-weight="bold">Overall</text>
+
+            <!-- Domain labels at bottom -->
+            <text x="110" y="168" text-anchor="middle" font-size="6" fill="#5a6a84">Random.</text>
+            <text x="147" y="168" text-anchor="middle" font-size="6" fill="#5a6a84">Deviations</text>
+            <text x="184" y="168" text-anchor="middle" font-size="6" fill="#5a6a84">Missing</text>
+            <text x="221" y="168" text-anchor="middle" font-size="6" fill="#5a6a84">Outcome</text>
+            <text x="258" y="168" text-anchor="middle" font-size="6" fill="#5a6a84">Selection</text>
+            <text x="295" y="168" text-anchor="middle" font-size="6" fill="#5a6a84">Overall</text>
+
+            <!-- ROW 1: Hassani 2018 -->
+            <rect x="2" y="18" width="102" height="40" rx="3" fill="#e8eef6"/>
+            <text x="8" y="32" font-size="8" fill="#1B2A4A" font-weight="bold">Hassani</text>
+            <text x="8" y="44" font-size="7" fill="#5a6a84">2018 · n=56</text>
+            <text x="8" y="55" font-size="6.5" fill="#5a6a84">NE vs Epi</text>
+            <!-- D1 some concerns -->
+            <rect x="91" y="21" width="37" height="34" rx="3" fill="#fff3cd" stroke="#e0a800" stroke-width="1"/>
+            <text x="110" y="43" text-anchor="middle" font-size="14" fill="#856404">⚠</text>
+            <!-- D2 low -->
+            <rect x="128" y="21" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="147" cy="38" r="9" fill="#28a745"/>
+            <text x="147" y="42" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D3 low -->
+            <rect x="165" y="21" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="184" cy="38" r="9" fill="#28a745"/>
+            <text x="184" y="42" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D4 low -->
+            <rect x="202" y="21" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="221" cy="38" r="9" fill="#28a745"/>
+            <text x="221" y="42" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D5 low -->
+            <rect x="239" y="21" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="258" cy="38" r="9" fill="#28a745"/>
+            <text x="258" y="42" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- Overall some concerns -->
+            <rect x="276" y="21" width="37" height="34" rx="3" fill="#fff3cd" stroke="#e0a800" stroke-width="1.5"/>
+            <text x="295" y="43" text-anchor="middle" font-size="14" fill="#856404">⚠</text>
+
+            <!-- ROW 2: Thomsen 2026 -->
+            <rect x="2" y="63" width="102" height="40" rx="3" fill="#e8eef6"/>
+            <text x="8" y="77" font-size="8" fill="#1B2A4A" font-weight="bold">Thomsen</text>
+            <text x="8" y="89" font-size="7" fill="#5a6a84">2026 · n=261</text>
+            <text x="8" y="100" font-size="6.5" fill="#5a6a84">INDUCT Trial</text>
+            <!-- D1 low -->
+            <rect x="91" y="66" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="110" cy="83" r="9" fill="#28a745"/>
+            <text x="110" y="87" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D2 some concerns -->
+            <rect x="128" y="66" width="37" height="34" rx="3" fill="#fff3cd" stroke="#e0a800" stroke-width="1"/>
+            <text x="147" y="88" text-anchor="middle" font-size="14" fill="#856404">⚠</text>
+            <!-- D3 low -->
+            <rect x="165" y="66" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="184" cy="83" r="9" fill="#28a745"/>
+            <text x="184" y="87" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D4 low -->
+            <rect x="202" y="66" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="221" cy="83" r="9" fill="#28a745"/>
+            <text x="221" y="87" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D5 low -->
+            <rect x="239" y="66" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="258" cy="83" r="9" fill="#28a745"/>
+            <text x="258" y="87" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- Overall some concerns -->
+            <rect x="276" y="66" width="37" height="34" rx="3" fill="#fff3cd" stroke="#e0a800" stroke-width="1.5"/>
+            <text x="295" y="88" text-anchor="middle" font-size="14" fill="#856404">⚠</text>
+
+            <!-- ROW 3: Vokuhl 2025 -->
+            <rect x="2" y="108" width="102" height="40" rx="3" fill="#e8eef6"/>
+            <text x="8" y="122" font-size="8" fill="#1B2A4A" font-weight="bold">Vokuhl</text>
+            <text x="8" y="134" font-size="7" fill="#5a6a84">2025 · n=71</text>
+            <text x="8" y="145" font-size="6.5" fill="#5a6a84">High-risk surgery</text>
+            <!-- D1 low -->
+            <rect x="91" y="111" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="110" cy="128" r="9" fill="#28a745"/>
+            <text x="110" y="132" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D2 some concerns -->
+            <rect x="128" y="111" width="37" height="34" rx="3" fill="#fff3cd" stroke="#e0a800" stroke-width="1"/>
+            <text x="147" y="133" text-anchor="middle" font-size="14" fill="#856404">⚠</text>
+            <!-- D3 low -->
+            <rect x="165" y="111" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="184" cy="128" r="9" fill="#28a745"/>
+            <text x="184" y="132" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D4 low -->
+            <rect x="202" y="111" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="221" cy="128" r="9" fill="#28a745"/>
+            <text x="221" y="132" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- D5 low -->
+            <rect x="239" y="111" width="37" height="34" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+            <circle cx="258" cy="128" r="9" fill="#28a745"/>
+            <text x="258" y="132" text-anchor="middle" font-size="11" fill="white">✓</text>
+            <!-- Overall some concerns -->
+            <rect x="276" y="111" width="37" height="34" rx="3" fill="#fff3cd" stroke="#e0a800" stroke-width="1.5"/>
+            <text x="295" y="133" text-anchor="middle" font-size="14" fill="#856404">⚠</text>
+
+            <!-- Legend -->
+            <circle cx="320" cy="22" r="6" fill="#28a745"/>
+            <text x="330" y="26" font-size="7" fill="#1B2A4A">Low risk</text>
+            <rect x="314" y="33" width="12" height="12" rx="2" fill="#fff3cd" stroke="#e0a800" stroke-width="1"/>
+            <text x="326" y="43" font-size="7" fill="#856404">⚠</text>
+            <text x="330" y="43" font-size="7" fill="#1B2A4A">Some concerns</text>
+            <rect x="314" y="50" width="12" height="12" rx="2" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+            <text x="326" y="60" font-size="10" fill="#dc3545">✗</text>
+            <text x="330" y="60" font-size="7" fill="#1B2A4A">High risk</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTS TABLE -->
+    <div class="tbl-wrap">
+      <div style="font-size:10px;font-weight:900;color:#1B2A4A;letter-spacing:0.5px;margin-bottom:3px;">📋 Summary of Included Studies</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:20%">Study</th>
+            <th style="width:22%">Population</th>
+            <th style="width:28%">Intervention vs Comparator</th>
+            <th style="width:30%">Key Findings (MAP / Safety)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Hassani (2018)</strong><br><em style="font-size:9px;color:#5a6a84">Iran · RCT · n=56</em></td>
+            <td>Hypertensive, GA Spinal Surgery</td>
+            <td>NE 10 mcg bolus vs Ephedrine 5 mg bolus</td>
+            <td>NE superior MAP (98.9 vs 91.5 mmHg; <span class="sig">p&lt;0.001</span>), fewer vasopressor doses, less bradycardia</td>
+          </tr>
+          <tr>
+            <td><strong>Thomsen (2026)</strong><br><em style="font-size:9px;color:#5a6a84">Denmark · RCT · n=261</em></td>
+            <td>ASA ≥2, Low–Moderate Risk, Noncardiac</td>
+            <td>NE Bolus 10 mcg/mL vs Continuous Infusion</td>
+            <td>AUC MAP&lt;65 comparable (p=0.070); 66% lower cumulative dose (<span class="sig">p&lt;0.001</span>)</td>
+          </tr>
+          <tr>
+            <td><strong>Vokuhl (2025)</strong><br><em style="font-size:9px;color:#5a6a84">Germany · RCT · n=71</em></td>
+            <td>ASA II–IV, High-Risk Elective Major Surgery</td>
+            <td>NE Bolus 10 mcg/mL vs Continuous Infusion</td>
+            <td>Continuous infusion better haemodynamic stability (ARV-MAP; <span class="sig">p&lt;0.001</span>, d=1.00); peripheral IV safe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CONCLUSIONS -->
+    <div>
+      <div class="section-header"><span class="icon">◆</span> Conclusions</div>
+      <div class="conc-body">
+        Push-dose NE <strong>10 mcg</strong> via peripheral IV is <strong>effective and safe</strong>
+        for IOH in non-obstetric surgery. It is <strong>superior to ephedrine</strong> and offers
+        comparable efficacy to continuous infusion in <strong>low-to-moderate risk</strong> patients.
+        For <strong>high-risk patients</strong> with arterial monitoring, continuous infusion may
+        provide better haemodynamic stability. <strong>GRADE Low (⊕⊕○○)</strong> — multicenter
+        RCTs with standardised outcome definitions are needed.
+      </div>
+    </div>
+
+    <!-- REFERENCES -->
+    <div>
+      <div class="refs-header">📚 References</div>
+      <div class="refs-body">
+        <ol>
+          <li>Sessler DI, et al. <em>Anesth Analg.</em> 2019;128(4):717–727.</li>
+          <li>Hassani V, et al. <em>Anesth Pain Med.</em> 2018;8(4):e79626.</li>
+          <li>Thomsen KK, et al. <em>Br J Anaesth.</em> 2026;136(4):1137–1144.</li>
+          <li>Vokuhl C, et al. <em>Br J Anaesth.</em> 2025;135(4):878–885.</li>
+          <li>Berkenbush M, et al. <em>West J Emerg Med.</em> 2024;25(5):708–714.</li>
+          <li>Page MJ, et al. <em>BMJ.</em> 2021;372:n71.</li>
+          <li>Sterne JAC, et al. <em>BMJ.</em> 2019;366:l4898.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <div class="footer">
+    <div class="footer-left">PRISMA 2020 · RoB 2 · GRADE · n=388<br>Systematic Review · Non-Obstetric Surgery</div>
+    <div class="footer-center">🏆 8th SOAC Competition · Yogyakarta 2026<br>Department of Anesthesiology, UGM</div>
+    <div class="footer-right">Presented by <em style="color:#C8A84B;">R Suseno Aji</em><br>soac2026@gmail.com · soacjogja2026.com</div>
+  </div>
+
+</div>
+</body>
+</html>
