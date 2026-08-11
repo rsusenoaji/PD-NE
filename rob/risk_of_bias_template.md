@@ -1,242 +1,304 @@
-# Risk of Bias Assessment Template
+# Risk of Bias Assessment – HASIL PENILAIAN
 ## Systematic Review: Push-Dose Norepinephrine for Intraoperative Hypotension in Non-Obstetric Surgery
 
-> **Petunjuk:**
-> - Untuk **RCT** → gunakan **Cochrane RoB 2** (Risk of Bias 2.0)
-> - Untuk **Observational study** (cohort, case-control, case series) → gunakan **Newcastle-Ottawa Scale (NOS)**
-> - Isi bagian yang sesuai dengan desain studi artikel
-
----
-
-## ═══════════════════════════════
-## BAGIAN A: COCHRANE RoB 2 (untuk RCT)
-## ═══════════════════════════════
-
+> **Alat yang digunakan:** Cochrane Risk of Bias 2.0 (RoB 2) untuk semua 3 RCT yang diinklusi
 > Referensi: Higgins JPT et al. BMJ 2019;366:l4898
-> Penilaian per domain: **Low risk** / **Some concerns** / **High risk**
+> Tanggal penilaian: Agustus 2026
+>
+> **Legenda penilaian:**
+> - Y = Ya / PY = Probably Yes / PN = Probably No / N = Tidak / NI = Tidak ada informasi / NA = Tidak relevan
 
 ---
 
-### RCT – Artikel: _______________ (isi ID/nama penulis)
-
-#### Domain 1: Bias akibat proses randomisasi
-
-| Signalling Question | Jawaban | Catatan |
-|---------------------|---------|---------|
-| 1.1 Apakah sequence allocation dibuat secara random? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 1.2 Apakah alokasi tersembunyi (allocation concealment)? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 1.3 Apakah perbedaan baseline karena masalah randomisasi? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-
-**Penilaian Domain 1:** ☐ Low risk &nbsp; ☐ Some concerns &nbsp; ☐ High risk
+## ART-001: Hassani et al. 2018 (RCT)
+**Judul:** Comparison of Ephedrine vs. Norepinephrine in Treating Anesthesia-Induced Hypotension in Hypertensive Patients
 
 ---
 
-#### Domain 2: Bias akibat deviasi dari intervensi yang dimaksud
+### Domain 1: Bias akibat proses randomisasi
 
-| Signalling Question | Jawaban | Catatan |
-|---------------------|---------|---------|
-| 2.1 Apakah peserta mengetahui alokasi? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 2.2 Apakah provider mengetahui alokasi? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 2.3 Jika ada unblinding, apakah memengaruhi outcome? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI &nbsp; ☐ NA | |
-| 2.4 Apakah ada deviasi dari protokol yang tidak direncanakan? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 1.1 Apakah sequence allocation dibuat secara random? | **Y** | Menggunakan "table of random numbers" – metode randomisasi valid |
+| 1.2 Apakah alokasi tersembunyi (allocation concealment)? | **PN** | Tidak dijelaskan prosedur penyembunyian alokasi secara eksplisit. Disebutkan "even numbers to ephedrine, odd to NE" – skema ini mudah diprediksi |
+| 1.3 Apakah perbedaan baseline karena masalah randomisasi? | **N** | Tidak ada perbedaan baseline yang signifikan antar kelompok (Tabel 1 studi) |
 
-**Penilaian Domain 2:** ☐ Low risk &nbsp; ☐ Some concerns &nbsp; ☐ High risk
-
----
-
-#### Domain 3: Bias akibat missing outcome data
-
-| Signalling Question | Jawaban | Catatan |
-|---------------------|---------|---------|
-| 3.1 Apakah data outcome tersedia untuk semua peserta? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 3.2 Jika tidak, apakah proporsi missing data kecil dan tidak bias? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI &nbsp; ☐ NA | |
-| 3.3 Apakah ada kemungkinan missing data terkait nilai true outcome? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-
-**Penilaian Domain 3:** ☐ Low risk &nbsp; ☐ Some concerns &nbsp; ☐ High risk
+**Penilaian Domain 1: ⚠️ Some concerns** – Randomisasi ada (tabel angka acak) namun allocation concealment tidak dijelaskan dengan memadai; skema ganjil/genap berpotensi diprediksi.
 
 ---
 
-#### Domain 4: Bias dalam pengukuran outcome
+### Domain 2: Bias akibat deviasi dari intervensi yang dimaksud
 
-| Signalling Question | Jawaban | Catatan |
-|---------------------|---------|---------|
-| 4.1 Apakah metode pengukuran outcome sesuai? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 4.2 Apakah pengukuran outcome blind terhadap alokasi? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 4.3 Apakah outcome assessor mengetahui kondisi peserta? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 2.1 Apakah peserta mengetahui alokasi? | **N** | Studi double-blinded – peserta tidak mengetahui alokasi |
+| 2.2 Apakah provider mengetahui alokasi? | **N** | Studi double-blinded – provider tidak mengetahui alokasi |
+| 2.3 Jika ada unblinding, apakah memengaruhi outcome? | **NA** | Double-blind terjaga |
+| 2.4 Apakah ada deviasi dari protokol yang tidak direncanakan? | **N** | Tidak dilaporkan adanya deviasi protokol |
 
-**Penilaian Domain 4:** ☐ Low risk &nbsp; ☐ Some concerns &nbsp; ☐ High risk
-
----
-
-#### Domain 5: Bias dalam seleksi hasil yang dilaporkan
-
-| Signalling Question | Jawaban | Catatan |
-|---------------------|---------|---------|
-| 5.1 Apakah analisis pre-specified (protocol/registration)? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-| 5.2 Apakah hasil yang dilaporkan sesuai dengan yang direncanakan? | ☐ Y &nbsp; ☐ PY &nbsp; ☐ PN &nbsp; ☐ N &nbsp; ☐ NI | |
-
-**Penilaian Domain 5:** ☐ Low risk &nbsp; ☐ Some concerns &nbsp; ☐ High risk
+**Penilaian Domain 2: 🟢 Low risk** – Double-blinded study, tidak ada deviasi protokol yang dilaporkan.
 
 ---
 
-#### Penilaian RoB 2 Keseluruhan
+### Domain 3: Bias akibat missing outcome data
+
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 3.1 Apakah data outcome tersedia untuk semua peserta? | **Y** | "No cases were excluded" di kedua kelompok (Gambar 1 studi – CONSORT flow) |
+| 3.2 Data missing proporsional? | **NA** | Tidak ada missing data |
+| 3.3 Missing data terkait true outcome? | **NA** | Tidak ada missing data |
+
+**Penilaian Domain 3: 🟢 Low risk** – Data lengkap untuk semua 56 peserta.
+
+---
+
+### Domain 4: Bias dalam pengukuran outcome
+
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 4.1 Apakah metode pengukuran outcome sesuai? | **Y** | Invasive arterial BP monitoring via radial artery catheter – metode gold standard |
+| 4.2 Apakah pengukuran outcome dilakukan tanpa mengetahui alokasi? | **Y** | Double-blind study; tidak disebutkan outcome assessor terpisah tetapi blinding terjaga |
+| 4.3 Apakah outcome assessor mengetahui kondisi peserta? | **N** | Double-blind; tidak mengetahui alokasi |
+
+**Penilaian Domain 4: 🟢 Low risk** – Monitoring invasif objektif; double-blind terjaga.
+
+---
+
+### Domain 5: Bias dalam seleksi hasil yang dilaporkan
+
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 5.1 Apakah analisis pre-specified? | **PY** | Studi terdaftar di IRCT (IRCT20180110038296N1); protocol tersedia sebelum publikasi |
+| 5.2 Apakah hasil yang dilaporkan sesuai rencana? | **PY** | Outcome utama (MAP, HR, jumlah dosis, frekuensi hipotensi) sesuai dengan yang disebutkan di Methods |
+
+**Penilaian Domain 5: 🟢 Low risk** – Protokol terdaftar, outcome yang dilaporkan sesuai rencana.
+
+---
+
+### Penilaian RoB 2 Keseluruhan – ART-001
 
 | Domain | Penilaian |
 |--------|-----------|
-| D1: Proses randomisasi | |
-| D2: Deviasi intervensi | |
-| D3: Missing outcome data | |
-| D4: Pengukuran outcome | |
-| D5: Seleksi hasil | |
-| **OVERALL RoB** | ☐ Low &nbsp; ☐ Some concerns &nbsp; ☐ High |
+| D1: Proses randomisasi | ⚠️ Some concerns |
+| D2: Deviasi intervensi | 🟢 Low risk |
+| D3: Missing outcome data | 🟢 Low risk |
+| D4: Pengukuran outcome | 🟢 Low risk |
+| D5: Seleksi hasil | 🟢 Low risk |
+| **OVERALL RoB** | ⚠️ **Some concerns** |
+
+**Alasan overall:** Some concerns terutama pada D1 karena allocation concealment tidak dijelaskan secara memadai (skema ganjil/genap berpotensi diprediksi).
 
 ---
 ---
 
-## ═══════════════════════════════════════════
-## BAGIAN B: NEWCASTLE-OTTAWA SCALE (untuk Studi Observasional)
-## ═══════════════════════════════════════════
-
-> Referensi: Wells GA et al. The Newcastle-Ottawa Scale (NOS) for assessing the quality of nonrandomised studies
-> Skor total: maks. **9 bintang (★)**
-> Interpretasi: 7-9 ★ = Kualitas tinggi; 4-6 ★ = Kualitas sedang; 0-3 ★ = Kualitas rendah
+## ART-002: Thomsen et al. 2026 – INDUCT Trial (RCT)
+**Judul:** Continuous versus bolus norepinephrine administration to treat hypotension after induction of general anaesthesia in low-to-moderate risk noncardiac surgery patients
 
 ---
 
-### NOS – Artikel: _______________ (isi ID/nama penulis)
-**Desain studi:** ☐ Cohort &nbsp; ☐ Case-control &nbsp; ☐ Case series
+### Domain 1: Bias akibat proses randomisasi
+
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 1.1 Apakah sequence allocation dibuat secara random? | **Y** | "Computer-generated codes" – randomisasi komputerisasi valid |
+| 1.2 Apakah alokasi tersembunyi? | **Y** | "Sequentially numbered opaque envelopes" – allocation concealment memadai |
+| 1.3 Perbedaan baseline karena masalah randomisasi? | **N** | Baseline serupa antar kelompok (Tabel 1 studi); sedikit lebih banyak hipertensi kronik di kelompok bolus (56% vs 42%) namun tidak bermakna klinis |
+
+**Penilaian Domain 1: 🟢 Low risk** – Randomisasi komputerisasi dengan concealment amplop bernomor.
 
 ---
 
-#### NOS untuk Cohort Study
+### Domain 2: Bias akibat deviasi dari intervensi yang dimaksud
 
-**SELEKSI (maks. 4 ★)**
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 2.1 Apakah peserta mengetahui alokasi? | **N** | "Patients were blinded to group allocation" |
+| 2.2 Apakah provider mengetahui alokasi? | **Y** | "Anaesthesiologists could not be [blinded]" – provider tahu alokasi |
+| 2.3 Apakah unblinding provider memengaruhi outcome? | **PN** | Primary outcome diukur oleh CNAP blinded system (finger-cuff) terpisah dari tindakan klinisi; namun manajemen BP klinisi berpotensi dipengaruhi pengetahuan alokasi |
+| 2.4 Deviasi protokol? | **N** | Tidak dilaporkan deviasi protokol yang tidak direncanakan |
 
-| # | Kriteria | Penilaian | ★ |
-|---|---------|-----------|---|
-| 1 | Representativitas kelompok exposed (Intervensi NE): Apakah benar-benar representatif? | ☐ Sangat representatif ★ &nbsp; ☐ Somewhat representatif ★ &nbsp; ☐ Kelompok terseleksi &nbsp; ☐ Tidak ada deskripsi | |
-| 2 | Seleksi kelompok non-exposed (kontrol): Dari komunitas/populasi yang sama? | ☐ Dari komunitas yang sama ★ &nbsp; ☐ Dari sumber berbeda &nbsp; ☐ Tidak ada kelompok kontrol | |
-| 3 | Ascertainment of exposure (intervensi): Verifikasi paparan push-dose NE? | ☐ Catatan rekam medik ★ &nbsp; ☐ Wawancara terstruktur ★ &nbsp; ☐ Self-report &nbsp; ☐ Tidak ada deskripsi | |
-| 4 | Outcome of interest belum terjadi saat awal studi? | ☐ Ya (outcome tidak ada di awal) ★ &nbsp; ☐ Tidak | |
-
-**Subtotal Seleksi:** ___ / 4 ★
+**Penilaian Domain 2: ⚠️ Some concerns** – Anestesiologis tidak dapat dibutakan terhadap alokasi (nature intervensi); namun primary outcome diukur dengan sistem terblinding.
 
 ---
 
-**KOMPARABILITAS (maks. 2 ★)**
+### Domain 3: Bias akibat missing outcome data
 
-| # | Kriteria | Penilaian | ★ |
-|---|---------|-----------|---|
-| 5 | Kontrol faktor perancu utama (mis. jenis anestesi, status ASA) | ☐ Dikontrol untuk faktor utama ★ &nbsp; ☐ + faktor tambahan ★★ &nbsp; ☐ Tidak dikontrol | |
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 3.1 Data tersedia untuk semua? | **PY** | 261/276 (94.5%) memiliki data lengkap; 15 tidak memiliki data lengkap |
+| 3.2 Missing data proporsi kecil dan tidak bias? | **Y** | Dropout rate 5.4% – di bawah threshold 10%; tidak ada pola diferensial |
+| 3.3 Missing terkait true outcome? | **PN** | Tidak ada indikasi bahwa missing berhubungan dengan outcome |
 
-**Subtotal Komparabilitas:** ___ / 2 ★
-
----
-
-**OUTCOME (maks. 3 ★)**
-
-| # | Kriteria | Penilaian | ★ |
-|---|---------|-----------|---|
-| 6 | Asesmen outcome: Cara pengukuran MAP/efek samping? | ☐ Independent blind assessment ★ &nbsp; ☐ Catatan rekam medik ★ &nbsp; ☐ Self-report &nbsp; ☐ Tidak ada deskripsi | |
-| 7 | Follow-up cukup untuk outcome terjadi? | ☐ Ya (>24 jam intraoperatif) ★ &nbsp; ☐ Tidak atau tidak jelas | |
-| 8 | Adequacy of follow-up: Apakah loss to follow-up minimal (<10%)? | ☐ Follow-up lengkap ★ &nbsp; ☐ Loss to follow-up kecil + deskripsi ★ &nbsp; ☐ Loss >10% &nbsp; ☐ Tidak ada deskripsi | |
-
-**Subtotal Outcome:** ___ / 3 ★
+**Penilaian Domain 3: 🟢 Low risk** – Missing data minimal (5.4%), simetris antar kelompok.
 
 ---
 
-**Skor NOS Total: ___ / 9 ★**
-**Interpretasi:** ☐ Tinggi (7-9★) &nbsp; ☐ Sedang (4-6★) &nbsp; ☐ Rendah (0-3★)
+### Domain 4: Bias dalam pengukuran outcome
+
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 4.1 Metode pengukuran sesuai? | **Y** | CNAP finger-cuff system yang telah divalidasi terhadap intraarterial BP monitoring |
+| 4.2 Pengukuran outcome dilakukan blinded terhadap alokasi? | **Y** | "Anaesthesiologists were blinded to continuous finger-cuff blood pressure monitoring" – outcome assessor (CNAP) terblinding |
+| 4.3 Outcome assessor tahu kondisi peserta? | **N** | CNAP system blinded; data diekstrak secara independen |
+
+**Penilaian Domain 4: 🟢 Low risk** – Pengukuran blinded menggunakan validated CNAP system.
 
 ---
 
-#### NOS untuk Case-Control Study (gunakan jika desain case-control)
+### Domain 5: Bias dalam seleksi hasil yang dilaporkan
 
-**SELEKSI (maks. 4 ★)**
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 5.1 Analisis pre-specified? | **Y** | "Statistical analysis plan was part of the study protocol and filed with the ethics committee before data were accessed" |
+| 5.2 Hasil dilaporkan sesuai rencana? | **Y** | Primary dan secondary endpoints dilaporkan sesuai protokol terdaftar (NCT05940649) |
 
-| # | Kriteria | Penilaian | ★ |
-|---|---------|-----------|---|
-| 1 | Definisi kasus adekuat? | ☐ Ya, independent validation ★ &nbsp; ☐ Record linkage ★ &nbsp; ☐ Self-report &nbsp; ☐ Tidak ada deskripsi | |
-| 2 | Representativitas kasus? | ☐ Konsekutif/representatif ★ &nbsp; ☐ Potensi bias seleksi | |
-| 3 | Seleksi kontrol: Dari komunitas yang sama? | ☐ Community controls ★ &nbsp; ☐ Hospital controls &nbsp; ☐ Tidak ada deskripsi | |
-| 4 | Definisi kontrol: Tidak ada riwayat kondisi serupa? | ☐ Ya ★ &nbsp; ☐ Tidak | |
-
-**Subtotal Seleksi:** ___ / 4 ★
-
-**KOMPARABILITAS (maks. 2 ★)**
-
-| # | Kriteria | Penilaian | ★ |
-|---|---------|-----------|---|
-| 5 | Komparabilitas kasus dan kontrol | ☐ Dikontrol faktor utama ★ &nbsp; ☐ + faktor tambahan ★★ &nbsp; ☐ Tidak | |
-
-**Subtotal Komparabilitas:** ___ / 2 ★
-
-**EXPOSURE (maks. 3 ★)**
-
-| # | Kriteria | Penilaian | ★ |
-|---|---------|-----------|---|
-| 6 | Ascertainment of exposure? | ☐ Secure record ★ &nbsp; ☐ Structured interview ★ &nbsp; ☐ Self-report &nbsp; ☐ Tidak ada deskripsi | |
-| 7 | Metode asesmen sama untuk kasus dan kontrol? | ☐ Ya ★ &nbsp; ☐ Tidak | |
-| 8 | Non-response rate? | ☐ Sama atau dideskripsikan ★ &nbsp; ☐ Berbeda dan tidak ada alasan | |
-
-**Skor NOS Total: ___ / 9 ★**
+**Penilaian Domain 5: 🟢 Low risk** – SAP terdaftar sebelum data diakses; semua outcome pre-specified dilaporkan.
 
 ---
 
-### Catatan Reviewer
+### Penilaian RoB 2 Keseluruhan – ART-002
 
-```
-[Tulis catatan / justifikasi penilaian di sini]
-```
+| Domain | Penilaian |
+|--------|-----------|
+| D1: Proses randomisasi | 🟢 Low risk |
+| D2: Deviasi intervensi | ⚠️ Some concerns |
+| D3: Missing outcome data | 🟢 Low risk |
+| D4: Pengukuran outcome | 🟢 Low risk |
+| D5: Seleksi hasil | 🟢 Low risk |
+| **OVERALL RoB** | ⚠️ **Some concerns** |
+
+**Alasan overall:** Some concerns pada D2 karena anestesiologis tidak dapat dibutakan terhadap alokasi (inherent nature of the intervention). Namun, primary outcome diukur dengan sistem blinded (CNAP).
 
 ---
 ---
 
-## Template NOS – Artikel 1
-*(Salin template NOS atau RoB 2 di atas sesuai desain studi)*
-
-**ID:** ___  
-**Penulis (Tahun):** ___  
-**Desain:** ☐ RCT (→ gunakan RoB 2) &nbsp; ☐ Cohort ☐ Case-control (→ gunakan NOS)  
-
-*(Salin bagian yang sesuai dari atas)*
+## ART-005: Vokuhl et al. 2025 (RCT)
+**Judul:** Continuous versus bolus norepinephrine administration and arterial blood pressure stability during induction of general anaesthesia in high-risk noncardiac surgery patients
 
 ---
 
-## Template NOS / RoB 2 – Artikel 2
+### Domain 1: Bias akibat proses randomisasi
 
-**ID:** ___  
-**Penulis (Tahun):** ___  
-**Desain:** ___  
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 1.1 Sequence allocation random? | **Y** | Randomisasi 1:1 tanpa blocking atau stratifikasi (metode tidak disebutkan eksplisit namun konsisten dengan RCT yang terdaftar) |
+| 1.2 Allocation concealment? | **Y** | "Group allocation was concealed until shortly before starting induction of general anaesthesia" |
+| 1.3 Baseline differences karena randomisasi? | **N** | Tidak ada perbedaan baseline yang signifikan (Tabel 1 studi) |
 
-*(Salin bagian yang sesuai dari atas)*
-
----
-
-## Template NOS / RoB 2 – Artikel 3
-
-**ID:** ___  
-**Penulis (Tahun):** ___  
-**Desain:** ___  
-
-*(Salin bagian yang sesuai)*
+**Penilaian Domain 1: 🟢 Low risk** – Concealment sampai sesaat sebelum induksi.
 
 ---
 
-## Template NOS / RoB 2 – Artikel 4
+### Domain 2: Bias akibat deviasi dari intervensi yang dimaksud
 
-**ID:** ___  
-**Penulis (Tahun):** ___  
-**Desain:** ___  
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 2.1 Peserta mengetahui alokasi? | **N** | "Participants were [blinded]" |
+| 2.2 Provider mengetahui alokasi? | **Y** | "Anaesthesiologists naturally were not blinded to group allocation" |
+| 2.3 Unblinding memengaruhi outcome? | **PN** | Primary outcome (ARV-MAP) dihitung dari data arterial catheter yang objektif; pengukuran dilakukan oleh trial personnel yang tidak mengintervensi secara langsung |
+| 2.4 Deviasi protokol? | **N** | Tidak ada deviasi protokol yang dilaporkan |
 
-*(Salin bagian yang sesuai)*
+**Penilaian Domain 2: ⚠️ Some concerns** – Anestesiologis tidak dapat dibutakan (nature of intervention); namun outcome primer (ARV-MAP dari arterial catheter) bersifat objektif dan tidak bergantung pada penilaian subjektif.
 
 ---
 
-## Template NOS / RoB 2 – Artikel 5
+### Domain 3: Bias akibat missing outcome data
 
-**ID:** ___  
-**Penulis (Tahun):** ___  
-**Desain:** ___  
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 3.1 Data tersedia untuk semua? | **PY** | 71/72 (98.6%) memiliki data; 1 dieksklusi karena technical problem dengan BP recording |
+| 3.2 Missing data minimal? | **Y** | Hanya 1 pasien (1.4%); bukan karena terkait outcome |
+| 3.3 Missing terkait outcome? | **N** | Masalah teknis (bukan outcome-related) |
 
-*(Salin bagian yang sesuai)*
+**Penilaian Domain 3: 🟢 Low risk** – Missing data sangat minimal (1 dari 72; 1.4%).
+
+---
+
+### Domain 4: Bias dalam pengukuran outcome
+
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 4.1 Metode pengukuran sesuai? | **Y** | Continuous intraarterial BP monitoring via radial artery catheter – gold standard; beat-to-beat averaged dalam 10-s windows |
+| 4.2 Pengukuran outcome blinded? | **Y** | ARV-MAP dihitung secara algoritmik dari data objektif; tidak melibatkan penilaian subjektif |
+| 4.3 Outcome assessor tahu kondisi? | **PN** | Trial personnel mengetahui alokasi tetapi primary outcome dihitung secara otomatis dari data BP |
+
+**Penilaian Domain 4: 🟢 Low risk** – Outcome primer (ARV-MAP) objektif; dihitung algoritmik dari continuous arterial BP.
+
+---
+
+### Domain 5: Bias dalam seleksi hasil yang dilaporkan
+
+| Signalling Question | Jawaban | Justifikasi |
+|---------------------|---------|-------------|
+| 5.1 Analisis pre-specified? | **Y** | "Statistical analysis plan was included in the trial protocol and submitted to the ethics committee before the data were accessed" |
+| 5.2 Hasil sesuai rencana? | **Y** | Primary dan secondary endpoints dilaporkan sesuai protokol terdaftar (NCT05997303); post hoc analyses jelas dilabeli |
+
+**Penilaian Domain 5: 🟢 Low risk** – SAP terdaftar sebelum data diakses; post hoc analyses dilabeli secara transparan.
+
+---
+
+### Penilaian RoB 2 Keseluruhan – ART-005
+
+| Domain | Penilaian |
+|--------|-----------|
+| D1: Proses randomisasi | 🟢 Low risk |
+| D2: Deviasi intervensi | ⚠️ Some concerns |
+| D3: Missing outcome data | 🟢 Low risk |
+| D4: Pengukuran outcome | 🟢 Low risk |
+| D5: Seleksi hasil | 🟢 Low risk |
+| **OVERALL RoB** | ⚠️ **Some concerns** |
+
+**Alasan overall:** Some concerns pada D2 karena anestesiologis tidak dapat dibutakan (inherent nature). Primary outcome (ARV-MAP) bersifat objektif sehingga bias ini minimal.
+
+---
+---
+
+## Template Kosong untuk Review Tambahan
+
+*(Diisi jika ada artikel tambahan yang diinklusi di kemudian hari)*
+
+### RoB 2 – Artikel: _______________
+**ID:** ___
+**Penulis (Tahun):** ___
+
+#### Domain 1
+| SQ | Jawaban | Justifikasi |
+|-----|---------|-------------|
+| 1.1 | | |
+| 1.2 | | |
+| 1.3 | | |
+**D1:** ☐ Low ☐ Some concerns ☐ High
+
+#### Domain 2
+| SQ | Jawaban | Justifikasi |
+|-----|---------|-------------|
+| 2.1 | | |
+| 2.2 | | |
+| 2.3 | | |
+| 2.4 | | |
+**D2:** ☐ Low ☐ Some concerns ☐ High
+
+#### Domain 3
+| SQ | Jawaban | Justifikasi |
+|-----|---------|-------------|
+| 3.1 | | |
+| 3.2 | | |
+| 3.3 | | |
+**D3:** ☐ Low ☐ Some concerns ☐ High
+
+#### Domain 4
+| SQ | Jawaban | Justifikasi |
+|-----|---------|-------------|
+| 4.1 | | |
+| 4.2 | | |
+| 4.3 | | |
+**D4:** ☐ Low ☐ Some concerns ☐ High
+
+#### Domain 5
+| SQ | Jawaban | Justifikasi |
+|-----|---------|-------------|
+| 5.1 | | |
+| 5.2 | | |
+**D5:** ☐ Low ☐ Some concerns ☐ High
+
+**OVERALL:** ☐ Low ☐ Some concerns ☐ High
