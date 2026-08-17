@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>E-Poster SOAC 2026 v3 – HD</title>
+<style>
+/* =========================================================
+   SOAC 2026 COMPLIANT · 1080 × 1960 px · 4 COLORS MAX
+   Colors: #1B2A4A (navy), #C8A84B (gold), #FFFFFF, #F4F6FB
+   Font: Arial (Calibri/Arial/Tahoma family)
+   Title: UPPERCASE · Author presenter: italic + underline
+   Body words: ≤250 · References: ≤7
+   ========================================================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 1080px;
+  height: 1960px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #FFFFFF;
+  color: #1B2A4A;
+}
+
+.poster {
+  width: 1080px;
+  height: 1960px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+
+/* ── HEADER BAND ── */
+.header {
+  background: #1B2A4A;
+  padding: 22px 48px 18px;
+  text-align: center;
+  border-bottom: 5px solid #C8A84B;
+  flex-shrink: 0;
+}
+.header-conf {
+  font-size: 22px;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.header-sub {
+  font-size: 12px;
+  color: #C8A84B;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+/* ── TITLE BLOCK ── */
+.title-block {
+  padding: 20px 52px 10px;
+  text-align: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid #d0d8e8;
+}
+.poster-title {
+  font-size: 20px;
+  font-weight: 900;
+  color: #1B2A4A;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.authors {
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: #1B2A4A;
+  line-height: 1.5;
+}
+.presenter { font-style: italic; text-decoration: underline; }
+.affiliation {
+  font-size: 12px;
+  color: #5a6a84;
+  margin-top: 4px;
+}
+
+/* ── MAIN CONTENT ── */
+.content {
+  flex: 1;
+  padding: 10px 36px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  overflow: hidden;
+}
+
+/* ── SECTION ── */
+.section { flex-shrink: 0; }
+
+.section-header {
+  background: #1B2A4A;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  padding: 5px 14px;
+  border-left: 5px solid #C8A84B;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-header .icon { color: #C8A84B; font-size: 13px; }
+
+.section-body {
+  background: #F4F6FB;
+  padding: 9px 14px;
+  font-size: 11.5px;
+  line-height: 1.62;
+  color: #1B2A4A;
+  border-left: 5px solid #C8A84B;
+  border-bottom: 1px solid #dce3ef;
+}
+.section-body p { margin-bottom: 0; }
+.section-body ul { padding-left: 16px; margin-top: 5px; }
+.section-body li { margin-bottom: 3px; }
+.section-body strong { color: #1B2A4A; }
+
+/* ── TABLE ── */
+.tbl-wrap {
+  background: #F4F6FB;
+  border-left: 5px solid #C8A84B;
+  border-bottom: 1px solid #dce3ef;
+  padding: 8px 14px 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10.5px;
+  margin-top: 4px;
+}
+thead tr { background: #1B2A4A; color: #FFFFFF; }
+thead th {
+  padding: 5px 8px;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+tbody tr:nth-child(even) { background: #e6ecf5; }
+tbody tr:nth-child(odd)  { background: #F4F6FB; }
+tbody td {
+  padding: 4px 8px;
+  color: #1B2A4A;
+  vertical-align: top;
+  border-bottom: 1px solid #d0d8e8;
+}
+.sig  { color: #c0392b; font-weight: bold; }
+.gold { color: #9a7100; font-weight: bold; }
+
+/* ── CONCLUSIONS (gold bg) ── */
+.conc-body {
+  background: #1B2A4A;
+  padding: 10px 14px;
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: #FFFFFF;
+  border-left: 5px solid #C8A84B;
+  border-bottom: 1px solid #dce3ef;
+}
+.conc-body ul { padding-left: 16px; margin-top: 4px; }
+.conc-body li { margin-bottom: 3px; }
+.conc-body strong { color: #C8A84B; }
+
+/* ── REFERENCES ── */
+.refs-header {
+  background: #C8A84B;
+  color: #1B2A4A;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 14px;
+  border-left: 5px solid #1B2A4A;
+}
+.refs-body {
+  background: #F4F6FB;
+  padding: 7px 14px;
+  border-left: 5px solid #1B2A4A;
+}
+.refs-body ol {
+  padding-left: 16px;
+  font-size: 10px;
+  line-height: 1.55;
+  color: #3a4a64;
+}
+.refs-body li { margin-bottom: 2px; }
+
+/* ── FOOTER ── */
+.footer {
+  background: #1B2A4A;
+  border-top: 4px solid #C8A84B;
+  padding: 9px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.footer-left { font-size: 10.5px; color: #8fa4c8; }
+.footer-right { font-size: 10.5px; color: #8fa4c8; text-align: right; }
+.footer-center {
+  font-size: 11px;
+  color: #C8A84B;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* ── TWO-COL MIDDLE ── */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+.two-col > .section { flex-shrink: 0; }
+
+/* ── GRADE PILLS ── */
+.grade-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.gpill {
+  background: #1B2A4A;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 4px 9px;
+  font-size: 10px;
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  line-height: 1.4;
+  border: 1.5px solid #C8A84B;
+}
+.gpill strong { color: #C8A84B; display: block; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-conf">8th SOAC Yogyakarta 2026</div>
+    <div class="header-sub">Original Research: Systematic Review &nbsp;·&nbsp; E-Poster</div>
+  </div>
+
+  <!-- TITLE -->
+  <div class="title-block">
+    <div class="poster-title">
+      Efficacy and Safety of Push-Dose Norepinephrine for<br>
+      Intraoperative Hypotension Management in Non-Obstetric Surgery:<br>
+      A Systematic Review
+    </div>
+    <div class="authors">
+      <span class="presenter">R Suseno Aji</span>, Calcarina Fitriani Retno Wisudarti, Djayanti Sari
+    </div>
+    <div class="affiliation">
+      Department of Anesthesiology, Gadjah Mada University, Indonesia
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- BACKGROUND -->
+    <div class="section">
+      <div class="section-header"><span class="icon">◆</span> Background</div>
+      <div class="section-body">
+        <p>Intraoperative hypotension (IOH), defined as MAP below 65 mmHg, occurs in up to 30% of
+        non-cardiac surgeries and is independently associated with myocardial injury, acute kidney injury,
+        and increased mortality. Push-dose (bolus) norepinephrine (NE) has emerged as a practical
+        vasopressor option; however, evidence supporting its efficacy and safety remains limited.</p>
+      </div>
+    </div>
+
+    <!-- OBJECTIVE -->
+    <div class="section">
+      <div class="section-header"><span class="icon">◆</span> Objective</div>
+      <div class="section-body">
+        <p>To systematically evaluate the efficacy and safety of push-dose norepinephrine for IOH
+        management in non-obstetric surgery compared to other vasopressors.</p>
+      </div>
+    </div>
+
+    <!-- METHODS -->
+    <div class="section">
+      <div class="section-header"><span class="icon">◆</span> Methods</div>
+      <div class="section-body">
+        <p>A systematic review following PRISMA 2020 was conducted. PubMed, Scopus, and ProQuest
+        were searched. Inclusion criteria: adults (≥18 years), non-obstetric surgery, RCT design.
+        Quality assessment used the Cochrane RoB 2 tool.</p>
+        <p style="margin-top:5px;"><strong>Search:</strong>
+        "Norepinephrine" AND ("push dose" OR "bolus") AND ("intraoperative hypotension" OR "surgery")<br>
+        <strong>Records:</strong> 643 identified → 363 after deduplication → 5 full-texts → <strong>3 RCTs included</strong></p>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="section">
+      <div class="section-header"><span class="icon">◆</span> Results</div>
+      <div class="section-body">
+        <p>Three RCTs (n=388) were included. Push-dose NE 10 mcg/bolus (10 mcg/mL, peripheral IV)
+        was consistent across all studies.</p>
+        <ul>
+          <li><strong>vs. Ephedrine:</strong> NE bolus significantly improved MAP (98.9±12.7 vs 91.5±10.9 mmHg; <span class="sig">p&lt;0.001</span>) and reduced hypotension episodes (<span class="sig">p=0.005</span>).</li>
+          <li><strong>vs. NE Continuous Infusion:</strong> Bolus NE showed comparable hypotension burden in low-to-moderate risk patients (p=0.070) with 66% lower cumulative drug dose (<span class="sig">p&lt;0.001</span>). Continuous infusion provided better haemodynamic stability in high-risk patients (ARV-MAP; <span class="sig">p&lt;0.001</span>, d=1.00).</li>
+          <li><strong>Safety:</strong> No significant overshoot hypertension or arrhythmia differences across groups. Peripheral IV administration was safe with zero extravasation complications.</li>
+          <li><strong>Certainty of Evidence:</strong> GRADE Low (⊕⊕○○). All studies: RoB 2 "Some Concerns".</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Study</th>
+            <th>Population</th>
+            <th>Intervention vs Comparator</th>
+            <th>Key Findings (MAP / Safety)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Hassani (2018)</strong></td>
+            <td>Hypertensive, GA Spinal Surgery</td>
+            <td>NE 10 mcg vs Ephedrine 5 mg</td>
+            <td>NE superior MAP (<span class="sig">p&lt;0.001</span>), fewer doses</td>
+          </tr>
+          <tr>
+            <td><strong>Thomsen (2026)</strong></td>
+            <td>ASA ≥2, Low–Mod Risk</td>
+            <td>NE Bolus vs Continuous Infusion</td>
+            <td>AUC MAP &lt;65 setara (p=0.07), 66% less dose</td>
+          </tr>
+          <tr>
+            <td><strong>Vokuhl (2025)</strong></td>
+            <td>ASA II–IV, High Risk</td>
+            <td>NE Bolus vs Continuous Infusion</td>
+            <td>Infusion better stability (<span class="sig">p&lt;0.001</span>), safe IV</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="grade-row">
+        <div class="gpill"><strong>⊕⊕○○</strong>MAP reversal · GRADE Low</div>
+        <div class="gpill"><strong>⊕⊕○○</strong>HTN overshoot · GRADE Low</div>
+        <div class="gpill"><strong>⊕○○○</strong>Time to MAP target · GRADE Very Low</div>
+        <div class="gpill"><strong>—</strong>Arrhythmia · No evidence</div>
+      </div>
+    </div>
+
+    <!-- CONCLUSIONS -->
+    <div class="section">
+      <div class="section-header"><span class="icon">◆</span> Conclusions</div>
+      <div class="conc-body">
+        Push-dose NE 10 mcg via peripheral IV is <strong>effective and safe</strong> for IOH management
+        in non-obstetric surgery. It is <strong>superior to ephedrine</strong> and offers comparable
+        efficacy to continuous infusion in low-to-moderate risk patients. For <strong>high-risk
+        patients</strong> with continuous arterial monitoring, continuous infusion may provide better
+        haemodynamic stability. Multicenter RCTs with standardised outcome definitions are needed.
+      </div>
+    </div>
+
+    <!-- REFERENCES -->
+    <div class="section">
+      <div class="refs-header">References</div>
+      <div class="refs-body">
+        <ol>
+          <li>Sessler DI, et al. <em>Anesth Analg.</em> 2019;128(4):717–727.</li>
+          <li>Hassani V, et al. <em>Anesth Pain Med.</em> 2018;8(4):e79626.</li>
+          <li>Thomsen KK, et al. <em>Br J Anaesth.</em> 2026;136(4):1137–1144.</li>
+          <li>Vokuhl C, et al. <em>Br J Anaesth.</em> 2025;135(4):878–885.</li>
+          <li>Berkenbush M, et al. <em>West J Emerg Med.</em> 2024;25(5):708–714.</li>
+          <li>Page MJ, et al. <em>BMJ.</em> 2021;372:n71.</li>
+          <li>Sterne JAC, et al. <em>BMJ.</em> 2019;366:l4898.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">PRISMA 2020 · RoB 2 · n=388</div>
+    <div class="footer-center">Presented at 8th SOAC Competition Yogyakarta 2026</div>
+    <div class="footer-right">soac2026@gmail.com · soacjogja2026.com</div>
+  </div>
+
+</div>
+</body>
+</html>

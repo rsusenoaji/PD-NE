@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<title>E-Poster SOAC 2026 – Push-Dose Norepinephrine</title>
+<style>
+  /* === SOAC 2026 GUIDELINE COMPLIANCE ===
+     - Size: 1080 × 1960 px (portrait, 9:16)
+     - Fonts: Arial (Calibri/Arial/Tahoma allowed)
+     - Max 4 colours: #003366 (navy), #E8A020 (gold), #FFFFFF (white), #F0F4FA (light bg)
+     - Title in CAPITAL LETTERS
+     - No academic titles on author name
+     - First name of presenter in italic + underline
+     - Max 250 words body text (title, pictures, references excluded)
+     - Max 7 references
+  */
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #FFFFFF;
+    color: #003366;
+    width: 1080px;
+    min-height: 1960px;
+  }
+
+  /* ---------- HEADER ---------- */
+  .header {
+    background: #003366;
+    padding: 28px 40px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 8px solid #E8A020;
+  }
+  .header-logo {
+    flex-shrink: 0;
+    font-size: 13px;
+    color: #E8A020;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+    border: 2px solid #E8A020;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .header-text { flex: 1; }
+  .header-category {
+    background: #E8A020;
+    color: #003366;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 3px 12px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .header h1 {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1.35;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .header-authors {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #E8A020;
+    line-height: 1.5;
+  }
+  .header-affil {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #b0c4de;
+    line-height: 1.4;
+  }
+
+  /* ---------- LAYOUT ---------- */
+  .poster-body {
+    padding: 28px 36px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .col-full { grid-column: 1 / -1; }
+
+  /* ---------- SECTION CARD ---------- */
+  .card {
+    background: #F0F4FA;
+    border-radius: 10px;
+    padding: 18px 20px;
+    border-left: 5px solid #003366;
+  }
+  .card-gold { border-left-color: #E8A020; }
+  .card h2 {
+    font-size: 14px;
+    font-weight: 900;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E8A020;
+  }
+  .card p, .card li {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #003366;
+  }
+  .card ul { padding-left: 18px; }
+  .card ul li { margin-bottom: 4px; }
+
+  /* ---------- PRISMA STRIP ---------- */
+  .prisma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 6px;
+  }
+  .prisma-box {
+    background: #003366;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 11.5px;
+    font-weight: bold;
+    flex: 1;
+    line-height: 1.4;
+  }
+  .prisma-box span { font-size: 18px; display: block; color: #E8A020; }
+  .prisma-arrow {
+    font-size: 20px;
+    color: #E8A020;
+    padding: 0 4px;
+    flex-shrink: 0;
+  }
+  .prisma-box.gold { background: #E8A020; color: #003366; }
+  .prisma-box.gold span { color: #003366; }
+
+  /* ---------- TABLE ---------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  th {
+    background: #003366;
+    color: #FFFFFF;
+    padding: 6px 8px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #c9d4e6;
+    color: #003366;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #e4eaf4; }
+  .sig { color: #c0392b; font-weight: bold; }
+  .ns { color: #555; }
+
+  /* ---------- KEY FINDING BOX ---------- */
+  .finding-box {
+    background: #003366;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 12.5px;
+    line-height: 1.65;
+  }
+  .finding-box strong { color: #E8A020; }
+  .finding-box ul { padding-left: 18px; margin-top: 6px; }
+  .finding-box li { margin-bottom: 5px; }
+
+  /* ---------- CONCLUSION BAR ---------- */
+  .conclusion {
+    background: #E8A020;
+    border-radius: 10px;
+    padding: 16px 22px;
+    font-size: 12.5px;
+    color: #003366;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  .conclusion ul { padding-left: 18px; margin-top: 6px; font-weight: normal; }
+  .conclusion li { margin-bottom: 5px; }
+  .conclusion .head { font-size: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    background: #003366;
+    border-top: 6px solid #E8A020;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-refs {
+    flex: 1;
+  }
+  .footer-refs h3 {
+    font-size: 11px;
+    color: #E8A020;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  .footer-refs ol {
+    padding-left: 16px;
+    font-size: 10.5px;
+    color: #b0c4de;
+    line-height: 1.55;
+  }
+  .footer-refs li { margin-bottom: 2px; }
+  .footer-event {
+    text-align: right;
+    font-size: 11px;
+    color: #b0c4de;
+    line-height: 1.6;
+    flex-shrink: 0;
+  }
+  .footer-event strong { color: #E8A020; display: block; font-size: 13px; }
+
+  /* ---------- BADGE STRIP ---------- */
+  .badge-strip {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .badge {
+    background: #003366;
+    color: #E8A020;
+    border: 1.5px solid #E8A020;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  /* ---------- GRADE ROW ---------- */
+  .grade-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .grade-pill {
+    background: #003366;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 11px;
+    flex: 1;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .grade-pill strong { color: #E8A020; display: block; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+  <div class="header-logo">8th SOAC<br>2026<br>YOGYAKARTA</div>
+  <div class="header-text">
+    <div class="header-category">Original Research – Systematic Review</div>
+    <h1>Efficacy and Safety of Push-Dose Norepinephrine for Intraoperative Hypotension Management in Non-Obstetric Surgery: A Systematic Review</h1>
+    <div class="header-authors">
+      <em><u>Rsu Senoaji</u></em>
+      &nbsp;|&nbsp; Department of Anesthesiology, [Institution Name]
+    </div>
+    <div class="header-affil">
+      Correspondence: [email@institution.ac.id]
+    </div>
+  </div>
+</div>
+
+<!-- ===== POSTER BODY ===== -->
+<div class="poster-body">
+
+  <!-- ── BACKGROUND ── -->
+  <div class="card col-full">
+    <h2>Background</h2>
+    <p>
+      Intraoperative hypotension (IOH), defined as mean arterial pressure (MAP) &lt;65 mmHg,
+      occurs in up to 30% of non-cardiac surgeries and is independently associated with myocardial
+      injury, acute kidney injury, and 30-day mortality. Push-dose (bolus) norepinephrine (NE)
+      has emerged as a practical vasopressor for acute IOH management; however, the evidence
+      supporting its efficacy and safety relative to other agents remains limited.
+    </p>
+    <div class="badge-strip">
+      <div class="badge">PICO · Adults Non-Obstetric Surgery</div>
+      <div class="badge">Intervention · Push-dose NE 10 mcg IV</div>
+      <div class="badge">Comparator · Ephedrine / NE Infusion</div>
+      <div class="badge">Outcomes · MAP Target · AE Profile</div>
+    </div>
+  </div>
+
+  <!-- ── METHODS ── -->
+  <div class="card">
+    <h2>Methods</h2>
+    <ul>
+      <li><strong>Design:</strong> Systematic review (PRISMA 2020)</li>
+      <li><strong>Databases:</strong> PubMed, Scopus, ProQuest</li>
+      <li><strong>Keywords:</strong> "Norepinephrine" AND ("push dose" OR "bolus") AND ("intraoperative hypotension" OR "perioperative" OR "surgery")</li>
+      <li><strong>Inclusion:</strong> Adults ≥18 yrs, non-obstetric surgery, push-dose/bolus NE for IOH, RCT design</li>
+      <li><strong>Exclusion:</strong> ICU/sepsis, obstetric, single case reports, reviews</li>
+      <li><strong>Quality:</strong> RoB 2 (Cochrane)</li>
+    </ul>
+  </div>
+
+  <!-- ── PRISMA ── -->
+  <div class="card card-gold">
+    <h2>PRISMA Flow</h2>
+    <div class="prisma">
+      <div class="prisma-box"><span>643</span>Records identified<br>(PubMed+Scopus+ProQuest)</div>
+      <div class="prisma-arrow">→</div>
+      <div class="prisma-box"><span>363</span>After deduplication<br>(280 duplicates removed)</div>
+      <div class="prisma-arrow">→</div>
+      <div class="prisma-box"><span>5</span>Full-texts<br>assessed</div>
+      <div class="prisma-arrow">→</div>
+      <div class="prisma-box gold"><span>3</span>RCTs<br>included</div>
+    </div>
+    <p style="font-size:11px;margin-top:8px;color:#555;">
+      Excluded at full-text (n=2): 1 scoping review (Berkenbush 2024), 1 narrative review (Duarte-Medrano 2026)
+    </p>
+  </div>
+
+  <!-- ── STUDY CHARACTERISTICS ── -->
+  <div class="card col-full">
+    <h2>Characteristics of Included Studies</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Study</th><th>n</th><th>Population</th><th>Anesthesia</th><th>Comparator</th><th>IOH Definition</th><th>BP Monitoring</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Hassani et al. 2018</strong><br>(Iran, RCT)</td>
+          <td>56</td>
+          <td>Hypertensive, ASA 1–2;<br>spinal surgery, GA</td>
+          <td>Propofol + cisatracurium</td>
+          <td>Ephedrine 5 mg bolus</td>
+          <td>MAP &lt;60 mmHg</td>
+          <td>Invasive (radial arterial)</td>
+        </tr>
+        <tr>
+          <td><strong>Thomsen et al. 2026</strong><br>(Germany, INDUCT RCT)</td>
+          <td>261</td>
+          <td>ASA ≥2, ≥45 yrs;<br>elective noncardiac (low–mod risk)</td>
+          <td>Opioid + propofol ± sevoflurane</td>
+          <td>NE continuous infusion</td>
+          <td>MAP &lt;65 mmHg</td>
+          <td>Oscillometric + blinded CNAP</td>
+        </tr>
+        <tr>
+          <td><strong>Vokuhl et al. 2025</strong><br>(Germany, RCT)</td>
+          <td>71</td>
+          <td>ASA II–IV, ≥45 yrs;<br>elective major noncardiac (high-risk)</td>
+          <td>Sufentanil/remi + propofol + roc ± sevo</td>
+          <td>NE continuous infusion</td>
+          <td>MAP &lt;65 mmHg</td>
+          <td>Invasive (radial arterial)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px;margin-top:5px;color:#555;">
+      All studies: NE push-dose 10 mcg/bolus · Concentration 10 mcg/mL · Peripheral IV route
+    </p>
+  </div>
+
+  <!-- ── EFFICACY RESULTS ── -->
+  <div class="card col-full">
+    <h2>Results – Efficacy</h2>
+    <table>
+      <thead>
+        <tr><th>Study</th><th>Key Outcome</th><th>NE Bolus</th><th>Comparator</th><th>p-value</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3"><strong>Hassani 2018</strong><br>vs. Ephedrine</td>
+          <td>End-anaesthesia MAP (mmHg, mean±SD)</td>
+          <td><strong>98.85 ± 12.65</strong></td>
+          <td>91.48 ± 10.93</td>
+          <td class="sig">&lt;0.001</td>
+        </tr>
+        <tr>
+          <td>No. of hypotension episodes</td>
+          <td>Fewer</td><td>More</td>
+          <td class="sig">0.005</td>
+        </tr>
+        <tr>
+          <td>Total vasopressor dose</td>
+          <td>Less</td><td>More</td>
+          <td class="sig">0.004</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>Thomsen 2026</strong><br>vs. NE Infusion</td>
+          <td>AUC MAP &lt;65 (mmHg·min, median IQR)</td>
+          <td>5.5 (0.5–24.5)</td><td>3.6 (0.0–16.6)</td>
+          <td class="ns">0.070 NS</td>
+        </tr>
+        <tr>
+          <td>Total NE dose (mcg/kg)</td>
+          <td>0.3 (0.2–0.4)</td><td>0.9 (0.6–1.1)</td>
+          <td class="sig">&lt;0.001</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>Vokuhl 2025</strong><br>vs. NE Infusion</td>
+          <td>ARV-MAP (mmHg/min) — Primary</td>
+          <td>25 ± 7</td><td>19 ± 6</td>
+          <td class="sig">&lt;0.001 (d=1.00)</td>
+        </tr>
+        <tr>
+          <td>AUC MAP &lt;65 (mmHg·min)</td>
+          <td>9 (1–16)</td><td>3 (0–18)</td>
+          <td class="ns">0.178 NS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── SAFETY ── -->
+  <div class="card">
+    <h2>Results – Safety</h2>
+    <table>
+      <thead><tr><th>Parameter</th><th>NE Bolus</th><th>Comparator</th><th>p</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Overshoot hypertension AUC &gt;100 (Thomsen 2026)</td>
+          <td>42.0 (18–87)<br>mmHg·min</td>
+          <td>47.4 (9–131)</td>
+          <td class="ns">0.390 NS</td>
+        </tr>
+        <tr>
+          <td>Overshoot hypertension AUC &gt;100 (Vokuhl 2025)</td>
+          <td>16 (6–53)<br>mmHg·min</td>
+          <td>20 (2–72)</td>
+          <td class="ns">0.986 NS</td>
+        </tr>
+        <tr>
+          <td>Arrhythmia (all studies)</td>
+          <td colspan="3">Not reported as structured outcome in any study</td>
+        </tr>
+        <tr>
+          <td>Vascular access complications</td>
+          <td colspan="3">None documented; peripheral IV safe in all 3 studies</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── RISK OF BIAS ── -->
+  <div class="card">
+    <h2>Risk of Bias (RoB 2)</h2>
+    <table>
+      <thead><tr><th>Study</th><th>D1</th><th>D2</th><th>D3</th><th>D4</th><th>D5</th><th>Overall</th></tr></thead>
+      <tbody>
+        <tr><td>Hassani 2018</td><td>⚠️</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>⚠️ Some</td></tr>
+        <tr><td>Thomsen 2026</td><td>✅</td><td>⚠️</td><td>✅</td><td>✅</td><td>✅</td><td>⚠️ Some</td></tr>
+        <tr><td>Vokuhl 2025</td><td>✅</td><td>⚠️</td><td>✅</td><td>✅</td><td>✅</td><td>⚠️ Some</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:10.5px;margin-top:6px;color:#555;">
+      D1=Randomization · D2=Deviations · D3=Missing data · D4=Outcome measurement · D5=Selection of reported result<br>
+      Concerns inherent to open-label design; no study rated high risk.
+    </p>
+  </div>
+
+  <!-- ── KEY FINDINGS ── -->
+  <div class="finding-box col-full">
+    <strong style="font-size:13px;font-weight:900;display:block;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;">Key Findings</strong>
+    <ul>
+      <li><strong>vs. Ephedrine:</strong> NE 10 mcg bolus significantly superior in maintaining MAP (p&lt;0.001), reducing hypotension episodes (p=0.005) and total vasopressor requirement (p=0.004) in hypertensive patients undergoing spinal surgery.</li>
+      <li><strong>vs. NE Infusion (low–mod risk):</strong> No significant difference in AUC hypotension (p=0.070); NE bolus used 66% less total dose vs. infusion (p&lt;0.001).</li>
+      <li><strong>vs. NE Infusion (high-risk):</strong> Continuous infusion provided greater BP stability (ARV-MAP, p&lt;0.001, Cohen's d=1.00); AUC hypotension did not differ (p=0.178).</li>
+      <li><strong>Safety:</strong> No significant difference in overshoot hypertension; no arrhythmia events documented; peripheral IV administration safe across all studies.</li>
+    </ul>
+  </div>
+
+  <!-- ── CONCLUSION ── -->
+  <div class="conclusion col-full">
+    <div class="head">Conclusion</div>
+    <ul>
+      <li>Push-dose NE 10 mcg (10 mcg/mL, peripheral IV) is <strong>effective and safe</strong> for managing IOH in non-obstetric surgery.</li>
+      <li>It is <strong>superior to ephedrine</strong> in hypertensive patients; comparable to continuous NE infusion for low–moderate risk patients.</li>
+      <li>For <strong>high-risk patients with continuous arterial monitoring</strong>, continuous infusion may offer better BP stability.</li>
+      <li>Overall <strong>evidence certainty is low</strong> (GRADE ⊕⊕○○) due to heterogeneity and limited sample size (n=388).</li>
+      <li>High-quality multicenter RCTs with standardised outcomes are needed.</li>
+    </ul>
+  </div>
+
+</div><!-- /poster-body -->
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <div class="footer-refs">
+    <h3>References (max 7)</h3>
+    <ol>
+      <li>Hassani V, et al. Comparison of Bolus Norepinephrine and Ephedrine in Spinal Surgery. <em>Anesth Pain Med.</em> 2018.</li>
+      <li>Thomsen JH, et al. INDUCT Trial – NE Bolus vs. Infusion for IOH. <em>Anesthesiology.</em> 2026.</li>
+      <li>Vokuhl T, et al. NE Bolus vs. Continuous Infusion in High-Risk Noncardiac Surgery. <em>Br J Anaesth.</em> 2025.</li>
+      <li>Sessler DI, et al. Perioperative Quality Initiative-3 consensus on IOH. <em>Br J Anaesth.</em> 2019.</li>
+      <li>Saugel B, et al. Hypotension during anesthesia induction: epidemiology and mechanisms. <em>Anesthesiology.</em> 2021.</li>
+      <li>Page MJ, et al. The PRISMA 2020 statement. <em>BMJ.</em> 2021.</li>
+      <li>Higgins JPT, et al. RoB 2: a revised tool for randomised trials. <em>BMJ.</em> 2019.</li>
+    </ol>
+  </div>
+  <div class="footer-event">
+    <strong>8th SOAC 2026</strong>
+    Yogyakarta, 22 August 2026<br>
+    soac<wbr>jogja2026.com<br>
+    <span style="color:#E8A020;font-size:10px;">soac2026@gmail.com</span>
+  </div>
+</div>
+
+</body>
+</html>

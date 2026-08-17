@@ -1,0 +1,6 @@
+ID_Artikel,Penulis_Tahun,Judul_Singkat,File_PDF,Desain_Studi,Populasi_Sesuai,Intervensi_Sesuai,Outcome_Tersedia,Keputusan,Alasan_Eksklusi
+ART-001,"Hassani et al. (2018)","NE vs Ephedrine – Hypertensive Spinal Surgery","79626.pdf",RCT double-blind,Ya - bedah spinal hipertensi,Ya - NE 10 mcg bolus IV,Ya - MAP/HR/dosis vasopressor,INCLUDE,
+ART-002,"Thomsen et al. (2026)","INDUCT Trial – Continuous vs Bolus NE – Noncardiac Low-Risk","GA non c.pdf",RCT,Ya - elective noncardiac surgery,Ya - NE bolus 10 mcg/mL vs infus kontinu,Ya - area under MAP <65 / durasi hipotensi,INCLUDE,
+ART-003,"Berkenbush et al. (2024)","Scoping Review: Push-Dose NE","eScholarship UC item 0tb2n06q.pdf",Scoping Review,Campuran (mayoritas obstetri),Ya,Tidak ada data primer,EXCLUDE,E4: Scoping review bukan studi primer
+ART-004,"Duarte-Medrano et al. (2026)","Narrative Review: Pharmacology of IOH","jpm-16-00384-v2.pdf",Narrative Review,Campuran,Tidak spesifik push-dose,Tidak ada data primer,EXCLUDE,E4: Narrative review tidak ada data primer
+ART-005,"Vokuhl et al. (2025)","Continuous vs Bolus NE – Noncardiac High-Risk","non ardiac.pdf",RCT,Ya - high-risk elective major noncardiac surgery,Ya - NE bolus 10 mcg/mL vs infus kontinu,Ya - ARV-MAP / area under MAP <65 / durasi hipotensi,INCLUDE,
